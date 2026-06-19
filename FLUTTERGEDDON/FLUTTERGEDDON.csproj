@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Assets\fluttergeddon.ico</ApplicationIcon>
+    <Version>1.0.5</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\flutter_*.png" />
+    <EmbeddedResource Include="Assets\fluttergeddon.ico" />
+    <EmbeddedResource Include="Assets\panel_background.png" />
+    <EmbeddedResource Include="Assets\panel_background_blink.png" />
+    <EmbeddedResource Include="Assets\panel_background_processing.png" />
+    <EmbeddedResource Include="Assets\update_pony.png" />
+    <EmbeddedResource Include="Assets\CHANGELOG.txt" />
+    <EmbeddedResource Include="Assets\FLUTTERSHY3.mp3" />
+  </ItemGroup>
+</Project>

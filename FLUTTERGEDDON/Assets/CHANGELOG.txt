@@ -1,0 +1,73 @@
+FLUTTERGEDDON 1.0.5
+
+EN:
+- Replaced the bundled music track.
+- In processing matrix mode, the panel background is now matrix-styled too.
+- Tunnel diamonds are hidden while processing matrix mode is active.
+- Kept the fixed update download window without transparent label backgrounds.
+
+RU:
+- Заменена встроенная музыка.
+- В матричном режиме фон экранчика теперь тоже матричный.
+- Ромбы тоннеля скрываются, пока активен матричный режим обработки.
+- Сохранен фикс окна скачивания обновления без прозрачных фонов подписей.
+
+FLUTTERGEDDON 1.0.4
+
+EN:
+- Processing operations now switch the panel image and show a green matrix-style background.
+- Added a hidden bottom-left debug menu with a visual update-window preview.
+- Processing visuals are disabled by default and can be toggled in debug menu.
+- Fixed update preview crash caused by transparent progress control background.
+- Fixed the real update download window crash caused by transparent labels.
+- Made the debug hotspot invisible.
+- Replaced the bundled music track.
+- Added a processing panel image.
+
+RU:
+- Во время обработки операций экранчик меняет картинку, а фон становится зеленым матричным.
+- Добавлено скрытое debug-меню в левом нижнем углу с тестом окна обновления.
+- Визуал обработки по умолчанию выключен и включается в debug-меню.
+- Исправлен вылет тестового окна обновления из-за прозрачного фона progress-контрола.
+- Исправлен вылет настоящего окна скачивания обновления из-за прозрачных подписей.
+- Невидимая debug-кнопка теперь действительно невидимая.
+- Заменена встроенная музыка.
+- Добавлена отдельная картинка для режима обработки.
+
+FLUTTERGEDDON 1.0.3
+
+EN:
+- Added update progress window with a moving pony on the progress bar.
+- Changelog now uses GitHub Release text after updates.
+- Fixed repeated update loops by aligning the app version with release checks.
+- Restored the app icon for runtime windows.
+- Improved GitHub updater TLS handling and update error diagnostics.
+- Reduced CPU load from desktop overlay and app-panel effects.
+- Fixed overlay trails by expanding dirty redraw regions.
+- Added blinking panel background frame.
+
+RU:
+- Добавлен экран обновления с полоской загрузки и пони на кончике.
+- Changelog после обновления теперь берется из текста GitHub Release.
+- Исправлен цикл повторного скачивания одной и той же обновы за счет корректной версии приложения.
+- Возвращена иконка приложения для окон во время запуска.
+- Улучшена работа автообновления через GitHub TLS и диагностика ошибок обновления.
+- Снижена нагрузка CPU от летающих картинок и эффектов в окне.
+- Исправлены следы от летающих картинок за счет расширенной области перерисовки.
+- Добавлен кадр моргания в экранчике.
+
+FLUTTERGEDDON 1.0.1
+
+EN:
+- Added auto-update via GitHub Releases with SHA256 verification.
+- Added CHANGELOG button with unread changes indicator.
+- Added RU/EN language switcher. First launch follows Windows language, manual choice is saved.
+- DLL switcher only works with user files already located in the Steam folder: version.dll/winhttp.dll are renamed to .disabled and back. The app does not copy its own DLL files into Steam.
+- FLUTTERMODE, volume, language, and read changelog state are saved.
+
+RU:
+- Добавлено автообновление через GitHub Releases с проверкой SHA256.
+- Добавлена кнопка CHANGELOG с индикатором непрочитанных изменений.
+- Добавлен переключатель языка RU/EN, язык берется из Windows при первом запуске и потом запоминается.
+- DLL-переключатель явно работает только с файлами пользователя в папке Steam: version.dll/winhttp.dll переименовываются в .disabled и обратно. Приложение не копирует свои DLL в Steam.
+- Режим FLUTTERMODE, громкость, язык и прочитанный changelog сохраняются в настройках.
