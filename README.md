@@ -1,8 +1,14 @@
 # FLUTTERGEDDON
 
-FLUTTERGEDDON is a small Windows utility for quickly enabling/disabling existing Steam-folder DLL files used by Koalageddon-style setups.
+FLUTTERGEDDON is a simple program to enable/disable [koalageddon-fixed](https://github.com/DumbCodeGenerator/Koalageddon-fixed?tab=License-1-ov-file) (by Dumb Code Generator).
+Games like CS2 and DOTA2 can't connect to servers with Koalageddon installed, and manually deleting DLL files takes a lot of time, so I made an application to automate this process.
+In the future, I will add new useful features as needed, not only related to Koalageddon.
 
 The repository contains the source code so users can inspect what the app does before running a release build.
+
+This is a personal tool for me and friends. Source code may be incomplete or not always published. Use at your own risk.
+
+<img width="200" height="164" alt="fluttershy" src="https://github.com/user-attachments/assets/6ffb7bfe-77de-4d6b-81c3-fe1236d1c2a9" />
 
 ## What The App Does
 
@@ -22,7 +28,6 @@ The repository contains the source code so users can inspect what the app does b
 - It does not inject code into games.
 - It does not steal tokens, passwords, cookies, browser data, or Steam login data.
 - It does not require Python to run release builds.
-- The macOS demo port does not change DLL files at all.
 
 ## Source Layout
 
@@ -32,14 +37,6 @@ FLUTTERGEDDON/
   FLUTTERGEDDON.csproj               .NET project file
   Assets/                            Images, icon, music, changelog
   GITHUB_UPLOAD_INSTRUCTION_RU.md    Release upload instructions
-
-FLUTTERGEDDON_MAC_APP/
-  Sources/main.swift                 Native macOS demo source
-  Assets/                            macOS demo assets
-  build_mac_app.command              macOS build script
-
-.github/workflows/
-  build-fluttergeddon-mac.yml        GitHub Actions macOS .app builder
 ```
 
 ## Build Windows Version
@@ -54,28 +51,6 @@ Output:
 
 ```text
 FLUTTERGEDDON/single/FLUTTERGEDDON.exe
-```
-
-## Build macOS Demo
-
-The macOS port must be built on macOS because it uses AppKit.
-
-```bash
-cd FLUTTERGEDDON_MAC_APP
-chmod +x build_mac_app.command
-./build_mac_app.command
-```
-
-Output:
-
-```text
-FLUTTERGEDDON_MAC_APP/build/FLUTTERGEDDON.app
-```
-
-You can also build the macOS app with GitHub Actions using:
-
-```text
-.github/workflows/build-fluttergeddon-mac.yml
 ```
 
 ## License
